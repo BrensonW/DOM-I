@@ -68,8 +68,10 @@ lastMenuItem.style.color = 'green';
 navItems.forEach(item => item.style.color = 'green');
 
 //CTA
-const ctaHeading = document.querySelector('.cta-text h1');
-ctaHeading.textContent = siteContent['cta']['h1'];
+const ctaHeading = document.querySelector(' h1');
+ctaHeading.textContent = "Dom Is Awesome";
+
+ctaHeading.style.width = '41%';
 
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent['cta']['button'];
