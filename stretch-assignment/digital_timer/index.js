@@ -1,3 +1,5 @@
+// Creating timer
+
 const tensMS = document.querySelector("#msTens");
 const hundredsMS = document.querySelector("#msHundreds");
 const secondsOnes = document.querySelector("#secondOnes");
@@ -24,6 +26,7 @@ msTens.innerText = 0;
 msHundreds.innerText = 0;
 secondOnes.innerText = 0;
 secondTens.innerText = 0;
+
 
 
 // Object Literal holding the timer with a start function and a stop function for being able to start and stop from anywhere in the javascript. 
@@ -87,6 +90,22 @@ const stopBtn = document.querySelector("#stop");
 startBtn.setAttribute("onclick", "timer.start(1)");
 resetBtn.setAttribute("onclick", "resetTimer()");
 stopBtn.setAttribute("onclick", "stopTimer()");
+
+// Adding style to buttons
+startBtn.style.backgroundColor = 'blue';
+startBtn.style.color = 'yellow';
+startBtn.style.padding = '1rem';
+startBtn.style.margin = '0.5rem';
+
+stopBtn.style.backgroundColor = 'blue';
+stopBtn.style.color = 'yellow';
+stopBtn.style.padding = '1rem';
+stopBtn.style.margin = '0.5rem';
+
+resetBtn.style.backgroundColor = 'blue';
+resetBtn.style.color = 'yellow';
+resetBtn.style.padding = '1rem';
+resetBtn.style.margin = '0.5rem';
 
 // Reset the timer to 00:00, removes redDigit class, stops the timer, and enables start button.
 function resetTimer() {
